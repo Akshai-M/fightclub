@@ -17,7 +17,7 @@ const About = () => {
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 bg-gradient-primary rounded-2xl flex items-center justify-center">
-                    <div className="text-4xl font-bold text-primary-foreground">SA</div>
+                    <div className="text-4xl font-bold bg-[#f82a3b] w-full h-full flex justify-center items-center rounded-[1rem] text-white">SA</div>
                   </div>
                 </div>
                 
@@ -36,21 +36,21 @@ const About = () => {
                     </p>
                     
                     <p>
-                      For those interested, I offer <strong className="text-primary">online training</strong> through martial art booklets (PDFs), DVDs, and live Zoom sessions.
+                      For those interested, I offer <strong className="text-[#f82a3b]">online training</strong> through martial art booklets (PDFs), DVDs, and live Zoom sessions.
                     </p>
                   </div>
                   
                   <div className="flex flex-wrap gap-3 mt-6">
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-neutral-800 text-zinc-300 px-3 py-1 rounded-full text-sm font-medium">
                       20+ Years Experience
                     </span>
-                    <span className="bg-accent/10 text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-neutral-800 text-zinc-300 px-3 py-1 rounded-full text-sm font-medium">
                       Multiple Disciplines
                     </span>
-                    <span className="bg-secondary/10 text-secondary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-neutral-800 text-zinc-300 px-3 py-1 rounded-full text-sm font-medium">
                       Women's Self-Defense
                     </span>
-                    <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-neutral-800 text-zinc-300 px-3 py-1 rounded-full text-sm font-medium">
                       Online Training
                     </span>
                   </div>
