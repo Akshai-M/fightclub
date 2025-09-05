@@ -11,7 +11,7 @@ const Header = () => {
 
           <div>
             <h1 className="text-xl font-bold">Fightclub India</h1>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm">
               An Extension of Chennai Martial Arts
             </p>
           </div>
@@ -19,31 +19,31 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <a
             href="#products"
-            className="text-foreground hover:text-primary martial-transition"
+            className="hover:text-primary martial-transition"
           >
             Products
           </a>
           <a
             href="#training"
-            className="text-foreground hover:text-primary martial-transition"
+            className="text-white hover:text-primary martial-transition"
           >
             Training
           </a>
           <a
             href="#workshops"
-            className="text-foreground hover:text-primary martial-transition"
+            className="text-white hover:text-primary martial-transition"
           >
             Workshops
           </a>
           <a
             href="#about"
-            className="text-foreground hover:text-primary martial-transition"
+            className="text-white hover:text-primary martial-transition"
           >
             About
           </a>
           <a
             href="#contact"
-            className="text-foreground hover:text-primary martial-transition"
+            className="text-white hover:text-primary martial-transition"
           >
             Contact
           </a>
