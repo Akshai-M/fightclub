@@ -7,7 +7,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Us</h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl">
               Meet Master Syed Asif Ali - Your Guide to Martial Arts Excellence
             </p>
           </div>
@@ -22,11 +22,11 @@ const About = () => {
                 </div>
                 
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-3xl font-bold mb-6 text-foreground">
+                  <h3 className="text-3xl font-bold mb-6 text-white">
                     Syed Asif Ali - Martial Arts Master
                   </h3>
                   
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <div className="space-y-4 text-zinc-200/80 leading-relaxed">
                     <p>
                       Hi there, this is Syed Asif Ali, the author of this website. I have been dedicated to martial arts for over 20 years. My experience spans across many Indian and Western martial arts, and I am also highly experienced in teaching women's self-defense.
                     </p>
