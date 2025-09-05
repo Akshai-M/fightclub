@@ -7,7 +7,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">About Us</h2>
-            <p className="text-xl ">
+            <p className="text-xl text-zinc-200/70">
               Meet Master Syed Asif Ali - Your Guide to Martial Arts Excellence
             </p>
           </div>
