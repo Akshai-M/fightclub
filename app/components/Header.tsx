@@ -19,7 +19,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <a
             href="#products"
-            className="hover:text-primary martial-transition"
+            className="text-white hover:text-primary martial-transition"
           >
             Products
           </a>
