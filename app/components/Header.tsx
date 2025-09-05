@@ -11,7 +11,7 @@ const Header = () => {
 
           <div>
             <h1 className="text-xl font-bold">Fightclub India</h1>
-            <p className="text-sm">
+            <p className="text-sm text-zinc-200/70">
               An Extension of Chennai Martial Arts
             </p>
           </div>
