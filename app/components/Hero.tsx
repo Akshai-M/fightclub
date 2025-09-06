@@ -34,7 +34,14 @@ const Hero = () => {
           </p>
         </div>
         
-        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="martial" size="xl" className="min-w-[200px] bg-[#f82a3b] text-white rounded-[10px]">
+            Start Your Journey
+          </Button>
+          <Button variant="hero" size="xl" className="min-w-[200px] bg-transparent border-none text-white">
+            View Our Programs
+          </Button>
+        </div>
       </div>
       
       
