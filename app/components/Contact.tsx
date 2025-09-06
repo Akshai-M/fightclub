@@ -66,7 +66,26 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            
+            {/* Map Placeholder */}
+            <Card className="bg-card/80 backdrop-blur-sm border-neutral-400/30 shadow-martial">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold mb-6 text-white">Find Us</h3>
+                
+                <div className="bg-zinc-600/10 rounded-lg h-80 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-hero opacity-50"></div>
+                  <div className="relative z-10 text-center">
+                    <MapPin className="w-16 h-16 text-[#f82a3b] mx-auto mb-4" />
+                    <h4 className="text-xl font-semibold mb-2 text-white">Chennai, Tamil Nadu</h4>
+                    <p className="text-zinc-200/70 mb-4">
+                      Royapettah Area
+                    </p>
+                    <Button variant="hero" size="sm" className=" text-white border-none">
+                      Open in Maps
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
