@@ -45,7 +45,17 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#f82a3b] rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1 text-white">Email</h4>
+                      <p className="text-zinc-200/70">
+                        dragonlee@fightclubindia.in
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="mt-8">
