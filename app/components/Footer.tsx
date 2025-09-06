@@ -11,7 +11,14 @@ const Footer = () => {
             <p className="text-zinc-200/80 mb-4">
               A professional martial arts institute offering training in multiple disciplines with global standards. Proud partner of Fightclub India.
             </p>
-            
+            <a 
+              href="https://www.chennaimartialarts.in" 
+              className="text-red-500 hover:text-primary-glow martial-transition font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.chennaimartialarts.in
+            </a>
           </div>
 
           
