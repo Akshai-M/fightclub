@@ -70,7 +70,11 @@ const Services = () => {
                 <div
                   className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-80`}
                 />
-                
+                <div className="absolute top-4 left-4">
+                  <span className="bg-neutral-800 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    {service.subtitle}
+                  </span>
+                </div>
               </div>
 
              
