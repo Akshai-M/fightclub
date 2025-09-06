@@ -47,7 +47,13 @@ const Services = () => {
   return (
     <section id="services" className="py-20 px-12 bg-background">
       <div className="container mx-auto px-4">
-        
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Services</h2>
+          <p className="text-xl text-zinc-200/70 max-w-2xl mx-auto">
+            Comprehensive martial arts solutions for training, equipment, and
+            events
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
