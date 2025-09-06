@@ -33,7 +33,17 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#ffbb00] rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1 text-white">Phone</h4>
+                      <p className="text-zinc-200/70">
+                        7550134063
+                      </p>
+                    </div>
+                  </div>
 
                   
                 </div>
