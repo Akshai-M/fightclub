@@ -62,7 +62,14 @@ const Services = () => {
               className="group overflow-hidden border-neutral-500/40 martial-transition hover:shadow-martial bg-card/50 backdrop-blur-sm"
             >
               <div className="relative overflow-hidden">
-                
+                <img
+                    src={service.image.src}
+                  alt={service.title}
+                  className="w-full h-64 object-cover martial-transition group-hover:scale-105"
+                />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-80`}
+                />
                 
               </div>
 
