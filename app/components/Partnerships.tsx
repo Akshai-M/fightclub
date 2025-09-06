@@ -36,7 +36,21 @@ const Partnerships = () => {
           ))}
         </div>
 
-        
+        {/* Scrolling animation for mobile */}
+        <div className="mt-12 overflow-hidden">
+          <div className="flex animate-scroll space-x-8 md:hidden">
+            {[...partners, ...partners].map((partner, index) => (
+              <div key={index} className="flex-shrink-0 w-32 text-center">
+                <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center mx-auto mb-2">
+                  <div className="text-lg font-bold text-accent-foreground">
+                    {partner.split(' ').map(word => word[0]).join('').slice(0, 2)}
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground">{partner}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
