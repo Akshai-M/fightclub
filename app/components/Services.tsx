@@ -77,7 +77,17 @@ const Services = () => {
                 </div>
               </div>
 
-             
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">{service.title}</h3>
+                <p className="text-zinc-200/70 mb-6 leading-relaxed">
+                  {service.description}
+                </p>
+                <button
+                  className={`w-full bg-[#${service.buttonVariant}] text-${service.text} rounded-[10px] py-3 font-semibold martial-transition hover:shadow-2xl`}
+                >
+                  {service.buttonText}
+                </button>
+              </CardContent>
             </Card>
           ))}
         </div>
