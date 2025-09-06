@@ -20,7 +20,19 @@ const Partnerships = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {partners.map((partner, index) => (
-            
+            <div 
+              key={index}
+              className="group flex flex-col items-center text-center p-6 rounded-lg border border-neutral-500/40 bg-card/30 martial-transition hover:bg-card/60 hover:shadow-glow"
+            >
+              <div className="w-16 h-16 bg-[#f82a3b] text-white rounded-xl flex items-center justify-center mb-4 shadow-martial">
+                <div className="text-2xl font-bold">
+                  {partner.split(' ').map(word => word[0]).join('').slice(0, 2)}
+                </div>
+              </div>
+              <h3 className="font-semibold text-sm text-center text-white leading-tight">
+                {partner}
+              </h3>
+            </div>
           ))}
         </div>
 
