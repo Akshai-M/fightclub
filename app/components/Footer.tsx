@@ -44,7 +44,11 @@ const Footer = () => {
           </div>
         </div>
 
-        
+        <div className="border-t border-zinc-400/50 mt-8 pt-8 text-center">
+          <p className="text-zinc-200/80">
+            © 2024 Fightclub India. All rights reserved. An Extension of Chennai Martial Arts.
+          </p>
+        </div>
       </div>
     </footer>
   );
