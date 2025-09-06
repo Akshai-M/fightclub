@@ -1,5 +1,8 @@
 import { Button } from "@/app/components/ui/button";
 import { Card, CardContent } from "@/app/components/ui/card";
+import productsImage from "@/app/assets/dojo.png";
+import trainingImage from "@/app/assets/dojo.png";
+import workshopImage from "@/app/assets/dojo.png";
 
 const Services = () => {
   const services = [
