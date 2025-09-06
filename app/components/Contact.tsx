@@ -21,7 +21,18 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold mb-6 text-white">Get In Touch</h3>
                 
                 <div className="space-y-6 ">
-                 
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-[#f82a3b] rounded-xl flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1 text-white">Location</h4>
+                      <p className="text-zinc-200/70">
+                        Royapettah, Chennai, Tamil Nadu
+                      </p>
+                    </div>
+                  </div>
+
                   
 
                   
