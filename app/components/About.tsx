@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/app/components/ui/card";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -6,13 +7,13 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">About Us</h2>
-            <p className="text-xl text-zinc-200/70">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 ">About Us</h2>
+            <p className="text-xl text-neutral-700">
               Meet Master Syed Asif Ali - Your Guide to Martial Arts Excellence
             </p>
           </div>
 
-          <Card className="bg-card/80 backdrop-blur-sm border-border/50 shadow-martial">
+          <Card className="bg-card/80 backdrop-blur-sm border-black/40 shadow-martial">
             <CardContent className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="flex-shrink-0">
@@ -22,13 +23,13 @@ const About = () => {
                 </div>
                 
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-3xl font-bold mb-6 text-white">
+                  <h3 className="text-3xl font-bold mb-6">
                     Syed Asif Ali - Martial Arts Master
                   </h3>
                   
-                  <div className="space-y-4 text-zinc-200/80 leading-relaxed">
+                  <div className="space-y-4 text-neutral-800 leading-relaxed">
                     <p>
-                      Hi there, this is Syed Asif Ali, the author of this website. I have been dedicated to martial arts for over 20 years. My experience spans across many Indian and Western martial arts, and I am also highly experienced in teaching women's self-defense.
+                      {"Hi there, this is Syed Asif Ali, the author of this website. I have been dedicated to martial arts for over 20 years. My experience spans across many Indian and Western martial arts, and I am also highly experienced in teaching women's self-defense."}
                     </p>
                     
                     <p>
@@ -48,7 +49,7 @@ const About = () => {
                       Multiple Disciplines
                     </span>
                     <span className="bg-neutral-800 text-zinc-300 px-3 py-1 rounded-full text-sm font-medium">
-                      Women's Self-Defense
+                      {"Women's Self-Defense"}
                     </span>
                     <span className="bg-neutral-800 text-zinc-300 px-3 py-1 rounded-full text-sm font-medium">
                       Online Training
