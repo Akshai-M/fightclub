@@ -12,8 +12,8 @@ const Partnerships = () => {
     <section id="partnerships" className="py-20 px-14 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Partnerships</h2>
-          <p className="text-xl text-zinc-200/70 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Partnerships</h2>
+          <p className="text-xl text-neutral-700 max-w-2xl mx-auto">
             Proudly affiliated with world-renowned martial arts organizations
           </p>
         </div>
@@ -29,7 +29,7 @@ const Partnerships = () => {
                   {partner.split(' ').map(word => word[0]).join('').slice(0, 2)}
                 </div>
               </div>
-              <h3 className="font-semibold text-sm text-center text-white leading-tight">
+              <h3 className="font-semibold text-sm text-center leading-tight">
                 {partner}
               </h3>
             </div>
