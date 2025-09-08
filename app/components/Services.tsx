@@ -1,8 +1,10 @@
-import { Button } from "@/app/components/ui/button";
+// import { Button } from "@/app/components/ui/button";
 import { Card, CardContent } from "@/app/components/ui/card";
+import Image from "next/image";
 import productsImage from "@/app/assets/dojo.png";
 import trainingImage from "@/app/assets/dojo.png";
 import workshopImage from "@/app/assets/dojo.png";
+import { Button } from "./ui/button";
 
 const Services = () => {
   const services = [
@@ -10,7 +12,7 @@ const Services = () => {
       title: "Martial Arts Products",
       subtitle: "Martial Art Products",
       description:
-        "Discover our premium collection of authentic martial arts equipment, uniforms, and accessories from renowned brands worldwide.",
+        "Your one-stop destination for martial arts equipment, uniforms, and weapons — from certified tournament brands to world-class international labels.",
         image: productsImage,
       buttonText: "Buy Products",
       buttonVariant: "f82a3b" as const,
@@ -21,7 +23,7 @@ const Services = () => {
       title: "Martial Arts Training",
       subtitle: "Do Martial Art",
       description:
-        "Master the ancient arts with our comprehensive training programs. From beginner to advanced levels, unlock your potential.",
+        "Learn martial arts at your nearest, most convenient location under the guidance of qualified instructors from basics to advanced skills.",
         image: trainingImage,
       buttonText: "Learn Now",
       buttonVariant: "ffbb00" as const,
@@ -48,8 +50,8 @@ const Services = () => {
     <section id="services" className="py-20 px-12 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Services</h2>
-          <p className="text-xl text-zinc-200/70 max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h2>
+          <p className="text-xl text-zinc-700 max-w-2xl mx-auto">
             Comprehensive martial arts solutions for training, equipment, and
             events
           </p>
@@ -59,11 +61,11 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-neutral-500/40 martial-transition hover:shadow-martial bg-card/50 backdrop-blur-sm"
+              className="group overflow-hidden border-black/30 martial-transition hover:shadow-martial bg-card/50 backdrop-blur-sm"
             >
               <div className="relative overflow-hidden">
-                <img
-                    src={service.image.src}
+                <Image
+                    src={service.image}
                   alt={service.title}
                   className="w-full h-64 object-cover martial-transition group-hover:scale-105"
                 />
@@ -78,15 +80,15 @@ const Services = () => {
               </div>
 
               <CardContent className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">{service.title}</h3>
-                <p className="text-zinc-200/70 mb-6 leading-relaxed">
+                <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+                <p className="text-zinc-800 mb-6 leading-relaxed">
                   {service.description}
                 </p>
-                <button
+                <Button
                   className={`w-full bg-[#${service.buttonVariant}] text-${service.text} rounded-[10px] py-3 font-semibold martial-transition hover:shadow-2xl`}
                 >
                   {service.buttonText}
-                </button>
+                </Button>
               </CardContent>
             </Card>
           ))}
