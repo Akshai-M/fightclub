@@ -1,6 +1,5 @@
 import { Button } from "@/app/components/ui/button";
 import heroImage from "@/app/assets/dojo.jpeg"
-// import heroImage from "@/assets/hero-martial-arts.jpg";
 
 const Hero = () => {
   return (
@@ -18,9 +17,7 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className="mb-8">
           <div className="inline-flex items-center space-x-4 mb-6">
-            <div className="w-20 h-20 bg-[#f82a3b] rounded-2xl flex items-center justify-center font-bold text-white text-3xl shadow-2xl">
-              FC
-            </div>
+            
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
             Fightclub India
@@ -36,10 +33,10 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="martial" size="xl" className="min-w-[200px] bg-[#f82a3b] text-white rounded-[10px]">
-            Start Your Journey
+            Buy Products
           </Button>
-          <Button variant="hero" size="xl" className="min-w-[200px] bg-transparent border-none text-white">
-            View Our Programs
+          <Button variant="hero" size="xl" className="min-w-[200px] bg-white border-none">
+            Learn Martial Art
           </Button>
         </div>
       </div>
