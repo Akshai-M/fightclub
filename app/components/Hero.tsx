@@ -22,12 +22,11 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
             Fightclub India
           </h1>
-          <p className="text-xl md:text-2xl text-zinc-200/60 mb-2">
+          <p className="text-xl md:text-2xl text-neutral-300 mb-2">
             An Extension of Chennai Martial Arts
           </p>
-          <p className="text-lg text-zinc-200/60 max-w-2xl mx-auto">
-            Master the ancient arts with over 20 years of dedicated martial arts expertise. 
-            Train with authentic techniques from India and around the world.
+          <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            {"Our legacy is in teaching martial arts for over 40 years. To complement your training, we've been Chennai's most trusted supplier of authentic gear since 2015"}
           </p>
         </div>
         
