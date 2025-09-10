@@ -17,7 +17,14 @@ const About = () => {
           </div>
 
        
-          
+          <div className="relative w-full h-80 md:h-96">
+            <Image
+              src={aboutImage} 
+              alt="Team group photo"
+              fill
+              className="rounded-xl object-cover"
+            />
+          </div>
         </div>
 
      
