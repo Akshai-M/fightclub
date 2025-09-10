@@ -76,7 +76,7 @@ const Contact = () => {
                       Royapettah Area
                     </p>
                     <Button variant="hero" size="sm" className="border-none">
-                      Open in Maps
+                      <a href="https://maps.app.goo.gl/anRe4B2mhSeb2BJ69" target="_blank">Open in maps</a>
                     </Button>
                   </div>
                 </div>
