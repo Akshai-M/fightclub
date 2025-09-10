@@ -39,7 +39,14 @@ const About = () => {
             />
           </div>
 
-         
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">
+              Our Mission: Helping Millions of Organizations Grow Better
+            </h3>
+            <p className="text-lg text-neutral-700 leading-relaxed">
+              {"Hi there, this is Syed Asif Ali, the author of this website. I have been dedicated to martial arts for over 20 years. My experience spans across many Indian and Western martial arts, and I am also highly experienced in teaching women's self-defense."}
+            </p>
+          </div>
         </div>
       </div>
     </section>
