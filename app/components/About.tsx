@@ -30,7 +30,14 @@ const About = () => {
      
         <div className="grid md:grid-cols-2 gap-12 items-center">
       
-         
+          <div className="relative w-full h-80 md:h-96">
+            <Image
+              src={aboutImage}
+              alt="Grow Better Office"
+              fill
+              className="rounded-xl object-cover"
+            />
+          </div>
 
          
         </div>
