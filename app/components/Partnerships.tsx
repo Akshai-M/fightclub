@@ -1,52 +1,52 @@
-const Partnerships = () => {
-  const partners = [
-    "Japan Karate Association",
-    "World Taekwondo", 
-    "International Judo Federation",
-    "World Kung Fu Federation",
-    "International Kickboxing Federation",
-    "Chennai Martial Arts"
-  ];
+import Image from "next/image";
+import dojo1 from "@/app/assets/i1.png";
+import dojo2 from "@/app/assets/i2.png";
+import dojo3 from "@/app/assets/i3.png";
+import dojo4 from "@/app/assets/i4.png";
+import dojo5 from "@/app/assets/i5.png";
+import dojo6 from "@/app/assets/i6.png";
+import dojo7 from "@/app/assets/i7.png";
 
+const images = [
+  { src: dojo1, label: "Budokai" },
+  { src: dojo2, label: "Dojo 2" },
+  { src: dojo3, label: "Flying dragon kung fu" },
+  { src: dojo4, label: "Born to fight" },
+  { src: dojo5, label: "Combat Kinetics" },
+  { src: dojo6, label: "Isshinryu" },
+  { src: dojo7, label: "Dojo 7" },
+];
+
+const Partnerships = () => {
   return (
-    <section id="partnerships" className="py-20 px-14 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="partnerships" className="py-20 px-12 md:px-14 bg-background">
+      <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Partnerships</h2>
-          <p className="text-xl text-neutral-700 max-w-2xl mx-auto">
-            Proudly affiliated with world-renowned martial arts organizations
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Community</h2>
+          <p className="text-lg md:text-xl text-neutral-700 max-w-2xl mx-auto">
+            Trusted by leaders of renowned martial arts organizations
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-          {partners.map((partner, index) => (
-            <div 
-              key={index}
-              className="group flex flex-col items-center text-center p-6 rounded-lg border border-neutral-500/40 bg-card/30 martial-transition hover:bg-card/60 hover:shadow-glow"
-            >
-              <div className="w-16 h-16 bg-[#f82a3b] text-white rounded-xl flex items-center justify-center mb-4 shadow-martial">
-                <div className="text-2xl font-bold">
-                  {partner.split(' ').map(word => word[0]).join('').slice(0, 2)}
+        <div className="overflow-hidden relative">
+          <div className="flex w-max animate-scroll">
+            {[...images, ...images].map((item, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col items-center min-w-[180px] max-w-[200px] mx-8"
+              >
+                <div className="w-40 h-38 flex items-center justify-center">
+                  <Image
+                    src={item.src}
+                    alt={item.label}
+                    width={160}
+                    height={80}
+                    className="object-contain"
+                  />
                 </div>
-              </div>
-              <h3 className="font-semibold text-sm text-center leading-tight">
-                {partner}
-              </h3>
-            </div>
-          ))}
-        </div>
-
-        {/* Scrolling animation for mobile */}
-        <div className="mt-12 overflow-hidden">
-          <div className="flex animate-scroll space-x-8 md:hidden">
-            {[...partners, ...partners].map((partner, index) => (
-              <div key={index} className="flex-shrink-0 w-32 text-center">
-                <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center mx-auto mb-2">
-                  <div className="text-lg font-bold text-accent-foreground">
-                    {partner.split(' ').map(word => word[0]).join('').slice(0, 2)}
-                  </div>
-                </div>
-                <p className="text-xs text-muted-foreground">{partner}</p>
+                <p className="mt-3 text-sm md:text-base font-medium text-neutral-600 text-center">
+                  {item.label}
+                </p>
               </div>
             ))}
           </div>
